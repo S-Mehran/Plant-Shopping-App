@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ProductList.css'
 import CartItem from './CartItem';
-import addItem from './CartSlice'
+import {addItem} from './CartSlice'
 import { useDispatch, useSelector } from 'react-redux';
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
@@ -262,6 +262,13 @@ function ProductList({ onHomeClick }) {
         setAddedToCart((prevState)=> ({
              ...prevState, [product.name]:true,
         }))
+
+        setTimeout(() => {
+            setAddedToCart((prevState) => ({
+              ...prevState,
+              [product.name]: false,
+            }));
+          }, 2000); // 2 seconds
     }
     const totalQuantity = Object.values(cartItems).reduce((sum, item) => sum + item.quantity, 0);
 
@@ -305,12 +312,14 @@ function ProductList({ onHomeClick }) {
                                 <div className='product-price'>
                                     {plant.cost}
                                 </div>
-                                <div>In Cart: {totalQuantity}</div>
                                 
-                                <button className='product-button' onClick={()=> handleAddToCart(plant)}>Add to Cart</button>
+                                <button className='product-button' onClick={()=> handleAddToCart(plant)} disabled={addedToCart[plant.name]}
+                                >  {addedToCart[plant.name] ? 'Added to Cart' : 'Add to Cart'}
+</button>
+                                
                             </div>
-
                         ))}
+
 </div>
 
 </div>
