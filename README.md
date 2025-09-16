@@ -78,23 +78,3 @@ By building this project, you will gain experience in:
 
 ---
 
-## 📂 Suggested Project Structure
-
-```plaintext
-src/
-│
-├── components/
-│   ├── Navbar.jsx
-│   ├── LandingPage.jsx
-│   ├── ProductList.jsx
-│   ├── ProductCard.jsx
-│   ├── CartPage.jsx
-│   └── CartItemCard.jsx
-│
-├── redux/
-│   ├── store.js
-│   └── cartSlice.js
-│
-├── App.jsx
-├── index.js
-└── styles.css
