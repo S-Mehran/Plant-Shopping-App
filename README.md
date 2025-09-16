@@ -23,7 +23,7 @@ The application demonstrates **React component design, state management with Hoo
     - Description  
     - Price  
     - **Add to Cart** button  
-  - Organized into at least **two sections** (e.g., *Aromatic Plants* and *Medicinal Plants*).  
+  - Organized into **two sections** (i.e., *Aromatic Plants* and *Medicinal Plants*).  
 
 - **Shopping Cart Page**  
   - Displays products added to the cart in **individual cards** with:
@@ -42,7 +42,7 @@ The application demonstrates **React component design, state management with Hoo
 
 ## 🎯 Learning Objectives
 
-By building this project, you will gain experience in:
+By building this project, I gained experience in:
 
 - **React Components**: Creating functional components using composition and nesting.  
 - **State Management with Hooks**: Using `useState` and `useEffect` to manage component-level state.  
@@ -55,16 +55,15 @@ By building this project, you will gain experience in:
 ## 📝 Project Tasks
 
 1. **Set up** the React project environment.  
-2. Build the **Landing Page** with navigation to the product list.  
-3. Implement the **Navigation Bar** with cart quantity display.  
-4. Create **Product Cards** for plants with images, details, and add-to-cart functionality.  
-5. Add at least **two plant sections** (*Aromatic*, *Medicinal*, etc.).  
+2. Built the **Landing Page** with navigation to the product list.  
+3. Implemented the **Navigation Bar** with cart quantity display.  
+4. Create **Product Cards** for plants with images, details, and add-to-cart functionality.    
 6. Build the **Shopping Cart Page** with:  
    - Item cards showing quantity controls and delete options.  
    - Subtotal and total cost calculation.  
    - Continue Shopping and Checkout buttons.  
 7. Add **dynamic state updates** for cart contents and costs.  
-8. **Deploy** the application to a public hosting service (e.g., GitHub Pages, Netlify, Vercel).  
+8. **Deploy** the application to a public hosting service i.e. GitHub Pages.  
 
 ---
 
